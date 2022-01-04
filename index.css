@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #1C1C1C;  
+    width: 100%;
+    height: 100%;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    background: #ADB5BD;
+} 
+body::-webkit-scrollbar-thumb {
+    background: #282828;
+    border-radius: 10px;
+    border-right: 2px solid #000000;
+} 
+html{
+    scroll-behavior: smooth;
+}
+li{
+    margin: 0 1em;
+}
+a{
+    text-decoration: none;
+    color: #EEF0F2;
+}
+
+.container{
+    width: 20%;
+}
+.icons{
+    margin: 0 0.5em;
+    margin-bottom: 0em;
+    box-sizing: border-box;
+}
+.LogoTDheader{
+    width: 3em;
+    position: relative;
+    top: 1.9em;
+    margin-left: 3em;
+    box-sizing: border-box;
+}
+.container-ul{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: small;
+    margin-top: -2em;
+    width: 90%;
+    height: 30%;
+    color: #EEF0F2;
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;  
+}
+.container-ul2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    margin-block: -3.4em;
+    margin-left: -8em;
+    box-sizing: border-box;
+}
+
+.userlogin{
+    width: 1.6em;
+    height: auto;
+    position: relative;
+    margin: 1em;
+}
+.usercarrito{
+    width: 1.6em;
+    height: auto;
+    position: relative;
+    margin: 1em;
+}
+
+/* INICIO */
+
+.container-inicio{
+    margin-top: 13%;
+    box-sizing: border-box;
+}
+.logoTDmain{
+    width: 30em;
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation-name: logotd;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1; 
+}
+
+
+
+@keyframes logotd {
+    0%   {width: 0em;}
+    75% {width: 40em;}
+    100% {width: 30em;}
+}
+
+/* SERVICIOS */
+
+.container-servicios{
+    margin-top: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10em;
+    column-gap: 2em;
+    -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@-webkit-keyframes slide-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  
+/* PACK HARAGAN */
+
+.packharagan{
+    width: 20em;
+    height: auto;
+}
+
+.packharagan:hover{
+    width: 21em;
+    height: auto;
+}
+
+/* PACK PEREZOSO */
+
+.packperezoso{
+    width: 20em;
+    height: auto;   
+}
+
+.packperezoso:hover{
+    width: 21em;
+    height: auto;  
+}
+/* PACK COPADO */
+
+.packcopado{
+    width: 20em;
+    height: auto;  
+}
+
+
+.packcopado:hover{
+    width: 21em;
+    height: auto; 
+}
+
+
+
+.container-servicios2{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10em;
+    column-gap: 2em;
+    -webkit-animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@-webkit-keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+/* PACK BUENARDO */
+
+.packbuenardo{
+    width: 20em;
+    height: auto;
+}
+
+.packbuenardo:hover{
+    width: 21em;
+    height: auto;
+}
+/* PACK NASHEE */
+
+.packnashee{
+    width: 20em;
+    height: auto;
+}
+
+.packnashee:hover{
+    width: 21em;
+    height: auto;
+}
+/* PACK PONETE A LABURAR */
+
+.packponetealaburar{
+    width: 20em;
+    height: auto;
+}
+
+.packponetealaburar:hover{
+    width: 21em;
+    height: auto;
+    transition-property: all;
+    transition-duration: 0.250s;
+    transition-timing-function: ease-in;
+}
+
+
+
+
+/* FOOTER */
+
+.container-footer{
+    background-color: #ECEBE4;
+    width: 100%;
+    height: 14em;
+    margin-top: 30%;
+    
+}
+.text-redessociales{
+    text-transform: uppercase;
+    color: #5B5B5B;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+    top: 20%;
+}
+.container-redessociales{
+    display: block;
+    text-align: center;
+}
+.redessociales{
+    width: 2em;
+    display: inline;
+    position: relative;
+    top: 3em;
+}
+.text-copyright{
+    margin-top: 5.5%;
+    text-align: center;
+}

@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #1C1C1C;  
+    width: 100%;
+    height: 100%;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    background: #ADB5BD;
+} 
+body::-webkit-scrollbar-thumb {
+    background: #282828;
+    border-radius: 10px;
+    border-right: 2px solid #000000;
+} 
+html{
+    scroll-behavior: smooth;
+}
+li{
+    margin: 0 1em;
+}
+a{
+    text-decoration: none;
+    color: #1C1C1C;
+    font-weight: 700;
+}
+input{
+    width: 18em;
+    height: 1.8em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #383838;
+    padding: 0 0.5em;
+}
+::placeholder{
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.790em;
+    color: #1C1C1C;
+}
+button{
+    width: 12em;
+    height: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10em;
+    border: none;
+}
+
+.container-login{
+    background-color: #FAFAFF;
+    width: 25em;
+    height: 42em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    border-radius: 1em;
+    box-sizing: border-box;
+}
+.LogoTDnegro{
+    width: 6em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -9%;
+    padding: 10% 0;
+}
+.text-registrarse{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    position: relative;
+    top: -7%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #FAFAFF;
+    background-color: #879181 ;
+    width: 65%;
+    height: 6%;
+    border-radius: 0.4em;
+}
+
+.usuarioinput{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    margin-top: -16.5%;
+}
+.text-usuario{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #1C1C1C;
+    position: relative;
+    top: -7%;
+}
+
+.emailinput{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    margin-top: -1%;
+}
+.text-email{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #1C1C1C;
+    position: relative;
+    top: 2%;
+}
+.passwordinput{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    margin-top: 2%;
+}
+.text-contraseña{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #1C1C1C;
+    position: relative;
+    top: 2%;
+}
+.button-registrarse {
+    background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)
+}
+
+.button-registrarse {
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: #FAFAFF;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 12%;
+ }
+
+ .button-registrarse:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+.text-notienescuenta{
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #1C1C1C;
+    position: relative;
+    top: 5%;
+}
+.flechasalir{
+    width: 1.2em;
+    padding: 1em 1em;
+}
