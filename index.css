@@ -22,63 +22,96 @@ html{
 }
 li{
     margin: 0 1em;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 a{
     text-decoration: none;
     color: #EEF0F2;
 }
-
-.container{
-    width: 20%;
-}
 .icons{
-    margin: 0 0.5em;
-    margin-bottom: 0em;
-    box-sizing: border-box;
+    width: 1.5em;
 }
-.LogoTDheader{
-    width: 3em;
+.icons2{
+    width: 1.5em;
+}
+.icon-usuario{
+    width: 1.6em;
+    margin-left: 1em;
     position: relative;
-    top: 1.9em;
-    margin-left: 3em;
-    box-sizing: border-box;
+    left: 28em;
 }
-.container-ul{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: small;
-    margin-top: -2em;
-    width: 90%;
-    height: 30%;
-    color: #EEF0F2;
-    list-style: none;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;  
+.icon-carrito{
+    width: 1.6em;
+    margin-left: 1em;
+    position: relative;
+    left: 28em;
 }
-.container-ul2{
-    width: 100%;
-    height: auto;
+.logotd{
+    width: 2.8em;
+    position: relative;
+    left: -28em;
+}
+.nav-bar{
+    width: 96%;
     display: flex;
-    justify-content: end;
-    margin-block: -3.4em;
-    margin-left: -8em;
-    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 12px 20px;
+    margin-top: 2%;
+}
+.menu2{
+    display: inline;
+    position: relative;
+    left: 30em;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding-left: 30px;
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #EEF0F2;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;  
+}
+.menu li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #EEF0F2;
+    transition: 0.15s ease-in-out;
+}
+.open-menu , .close-menu{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+#check{
+    display: none;
 }
 
-.userlogin{
-    width: 1.6em;
-    height: auto;
-    position: relative;
-    margin: 1em;
-}
-.usercarrito{
-    width: 1.6em;
-    height: auto;
-    position: relative;
-    margin: 1em;
-}
+
+
+
 
 /* INICIO */
 
@@ -90,6 +123,7 @@ a{
     width: 30em;
     height: auto;
     display:block;
+    margin-top: -6.5%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -320,3 +354,156 @@ a{
     margin-top: 5.5%;
     text-align: center;
 }
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .icons2{
+        position: relative;
+        left: 6em;
+        width: 1.5em;
+    } 
+       
+    .logotd{
+        width: 2.5em;
+        position: relative;
+        left: -7em;
+        }
+    
+    .nav-bar{
+        padding: 12px 9px;
+        }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 10%;
+        z-index: 100;
+        background-color: #2e2d2d;
+        transition: all 0.2s ease-in-out;
+        }   
+    .menu li{
+        margin-top: 40px;
+        }
+    .menu li a{
+        padding: 10px;
+        }
+    .open-menu , .close-menu{
+        display: block;   
+        }
+    
+    #check:checked ~ .menu{right: 0;}
+    .icon-usuario{
+        width: 2em;
+        margin-left: 1em;
+        position: relative;
+        top: -27.95em;
+        left: -9em;
+        }
+    .icon-carrito{
+        width: 2em;
+        margin-left: 1em;
+        position: relative;
+        top: -30.4em;
+        left: -6em;
+        }
+    }
+@media (max-width: 768px){
+    .logotd{
+        width: 2.5em;
+        position: relative;
+        left: -19em;
+    }
+    .nav-bar{
+        padding: 12px 9px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #2e2d2d;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{ 
+        padding: 10px;
+    }
+    .open-menu , .close-menu{
+        display: block;
+    }
+    #check:checked ~ .menu{right: 0;}
+    .icon-usuario{
+        width: 2em;
+        margin-left: 1em;
+        position: relative;
+        top: -27.95em;
+        left: -15em;
+    }
+    .icon-carrito{
+        width: 2em;
+        margin-left: 1em;
+        position: relative;
+        top: -30.4em;
+        left: -12em;
+    }
+    /* INICIO */
+    .logoTDmain{
+        width: 15em;
+        height: auto;
+        display:block;
+        margin-top: -6.5%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        animation-name: logotd;
+        animation-duration: 1s;
+        animation-iteration-count: 1; 
+    }
+
+    
+    
+    @keyframes logotd {
+        0%   {width: 0em;}
+        75% {width: 20em;}
+        100% {width: 15em;}
+    }
+    .packharagan{
+        width: 12em;
+        height: auto;
+    }
+    .packperezoso{
+        width: 12em;
+        height: auto;
+    }
+    .packcopado{
+        width: 12em;
+        height: auto;
+    }
+    .packbuenardo{
+        width: 12em;
+        height: auto;
+    }
+    .packnashee{
+        width: 12em;
+        height: auto;
+    }
+    .packponetealaburar{
+        width: 12em;
+        height: auto;
+    }
+    /* FOOTER */
+    .text-copyright{
+        margin-top: 10%;
+        text-align: center;
+    }
+}  
