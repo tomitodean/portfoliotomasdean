@@ -287,7 +287,7 @@ button{
         border-radius: 0.5em;
         resize: vertical;
         position: relative;
-        left: -1.8em;
+        left: -2em;
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
     }
@@ -376,7 +376,7 @@ button{
         color: #1c1c1c;
         font-weight: 600;
         padding: 0.5em 0.5em;
-        font-size: 1.2em;
+        font-size: 1em;
     }
     /* FOOTER */
     .container-footer{
