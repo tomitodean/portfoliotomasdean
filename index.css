@@ -449,25 +449,49 @@ a{
         width: 6em;
         height: auto;
     }
+    .packharagan:hover{
+        width: 7em;
+        height: auto; 
+    }
     .packperezoso{
         width: 6em;
         height: auto;
+    }
+    .packperezoso:hover{
+        width: 7em;
+        height: auto; 
     }
     .packcopado{
         width: 6em;
         height: auto;
     }
+    .packcopado:hover{
+        width: 7em;
+        height: auto; 
+    }
     .packbuenardo{
         width: 6em;
         height: auto;
+    }
+    .packbuenardo:hover{
+        width: 7em;
+        height: auto; 
     }
     .packnashee{
         width: 6em;
         height: auto;
     }
+    .packnashee:hover{
+        width: 7em;
+        height: auto; 
+    }
     .packponetealaburar{
         width: 6em;
         height: auto;
+    }
+    .packponetealaburar:hover{
+        width: 7em;
+        height: auto; 
     }
     /* FOOTER */
     .container-footer{
@@ -573,25 +597,49 @@ a{
         width: 12em;
         height: auto;
     }
+    .packharagan:hover{
+        width: 13em;
+        height: auto; 
+    }
     .packperezoso{
         width: 12em;
         height: auto;
+    }
+    .packperezoso:hover{
+        width: 13em;
+        height: auto; 
     }
     .packcopado{
         width: 12em;
         height: auto;
     }
+    .packcopado:hover{
+        width: 13em;
+        height: auto; 
+    }
     .packbuenardo{
         width: 12em;
         height: auto;
+    }
+    .packbuenardo:hover{
+        width: 13em;
+        height: auto; 
     }
     .packnashee{
         width: 12em;
         height: auto;
     }
+    .packnashee:hover{
+        width: 13em;
+        height: auto; 
+    }
     .packponetealaburar{
         width: 12em;
         height: auto;
+    }
+    .packponetealaburar:hover{
+        width: 13em;
+        height: auto; 
     }
     /* FOOTER */
     .text-copyright{
