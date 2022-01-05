@@ -258,6 +258,195 @@ button:hover{
     text-align: center;
 }
 /* MEDIA QUERIES */
+@media (min-width: 320px) and (max-width: 425px) {
+    .logotd{
+        width: 2em;
+        position: relative;
+        left: -8em;
+        top: -0.1em;
+    }
+    
+    .nav-bar{
+        padding: 12px 9px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        margin-right: 0;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #2e2d2d;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{
+        padding: 10px;
+    }
+    
+    
+    
+    .open-menu , .close-menu{
+        display: block;
+    }
+    #check:checked ~ .menu{right: 0;}
+    .icon-usuario{
+        width: 2em;
+        margin-left: 1em;
+        position: relative;
+        top: -27.5em;
+        left: -6em;
+    }
+    .icon-carrito{
+        width: 2em;
+        margin-left: 1em;
+        position: relative;
+        top: -29.9em;
+        left: -3em;
+    }
+    /* PACK NASHEE */
+    .container-text{
+        display: block;
+        width: 88%;
+        height: 50%;
+        margin-top: 3%;
+        font-weight: 900;
+        font-size: 2em;
+        color: transparent;
+        -webkit-text-stroke-color: #00ff00;
+        -webkit-text-stroke-width: 1px;
+        margin-left: 0.5em;
+        margin-right: 0;
+        animation-name: container-text;
+        animation-duration: 2s;
+        animation-iteration-count: 1; 
+    }
+    @keyframes container-text{
+        0%  {margin-left: -10em;}
+        100% {margin-left: 0.5em;}
+    } 
+    .container-text2{
+        display: block;
+        width: 100%;
+        height: 50%;
+        margin-top: -9%;
+        font-weight: 900;
+        font-size: 2em;
+        color: #00ff00;
+        text-align: end;
+        margin-left: -3.05em;
+        margin-right: 0;
+        animation-name: container-text2;
+        animation-duration: 2s;
+        animation-iteration-count: 1; 
+    }
+    @keyframes container-text2{
+        0%  {margin-left: 22em;}
+        100% {margin-left: -3.05em;}
+    }
+    .descripcion-packnashee{
+        background:transparent;
+        color: #EEF0F2;
+        justify-content: end;
+        margin-top: -5%;
+        width: 60%;
+        height: 3em;
+        font-weight: 300;
+        font-size: 1em;
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.2s both;
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.2s both;
+    }
+    
+    @-webkit-keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      .container-precios{
+        color: #EEF0F2;
+        margin-top: 55%;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 700;
+        box-sizing: border-box;
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.2s both;
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.2s both;
+    }
+    .flechaizquierda{
+        width: 1.5em;
+        margin-left: 1.2em;
+        box-sizing: border-box;
+        position: relative;
+        top: 2.98em;
+    }
+    .flechaderecha{
+        width: 1.5em;
+        margin-left: 21.5em;
+        box-sizing: border-box;
+        position: relative;
+        top: 1em;
+        
+    }
+    /* FOOTER */
+    .container-footer{
+        background-color: #ECEBE4;
+        width: 100%;
+        height: 6em;
+        margin-top: 60%;
+        
+    }
+    
+    .redessociales{
+        width: 1.4em;
+        display: inline;
+        position: relative;
+        top: 0.2em;
+    }
+    .text-redessociales{
+        text-transform: uppercase;
+        color: #5B5B5B;
+        font-weight: 900;
+        position: relative;
+        text-align: center;
+        top: 6%;
+        font-size: 0.7em;
+    }
+    .text-copyright{
+        font-size: 0.8em;
+        margin-top: 1%;
+        color: #5B5B5B;
+        font-weight: 500;
+    }
+} 
+
 
 @media (min-width: 768px) and (max-width: 1023px){
     .logotd{
@@ -400,13 +589,15 @@ button:hover{
         width: 2.5em;
         margin-left: 1.2em;
         box-sizing: border-box;
+        position: relative;
+        top: -2em;
     }
     .flechaderecha{
         width: 2.5em;
         margin-left: 42em;
         box-sizing: border-box;
         position: relative;
-        top: -2.9em;
+        top: -15em;
         
     }
     /* FOOTER */
