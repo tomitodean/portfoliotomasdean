@@ -294,36 +294,54 @@ body{
       /* Media Queries */
 @media (min-width: 320px) and (max-width: 425px) {
         .logotd{
-            width: 2em;
-            position: relative;
-            left: -10em;
-            top: -0.1em;
-        }
-        
-        .nav-bar{
-            padding: 12px 9px;
-        }
-        .menu{
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 80%;
-            height: 100vh;
-            position: fixed;
-            margin-right: 0;
-            top: 0;
-            right: -100%;
-            z-index: 100;
-            background-color: #2e2d2d;
-            transition: all 0.2s ease-in-out;
-        }
-        .menu li{
-            margin-top: 40px;
-        }
-        .menu li a{
-            padding: 10px;
-        }
-        
+                width: 2em;
+                position: relative;
+                left: -9em;
+                top: -0.1em;
+            }
+            
+            .nav-bar{
+                padding: 12px 9px;
+            }
+            .menu{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                height: 100vh;
+                position: fixed;
+                margin-right: 0;
+                top: 0;
+                right: -100%;
+                z-index: 100;
+                background-color: #2e2d2d;
+                transition: all 0.2s ease-in-out;
+            }
+            .menu li{
+                margin-top: 40px;
+            }
+            .menu li a{
+                padding: 10px;
+            }
+            .open-menu , .close-menu{
+                display: block;
+            }
+            #check:checked ~ .menu{right: 0;}
+            .icon-usuario{
+                width: 2em;
+                margin-left: 1em;
+                position: relative;
+                top: -27.5em;
+                left: -6em;
+            }
+            .icon-carrito{
+                width: 2em;
+                margin-left: 1em;
+                position: relative;
+                top: -29.9em;
+                left: -3em;
+            }
+            /* QUIEN SOY */
         .quiensoy{
                 width: 15em;
                 height: auto;
@@ -716,52 +734,52 @@ body{
         text-align: center;
         }
 }
-@media (min-width: 1024px) and (max-width: 1439px){
+@media (min-width: 1024px) and (max-width: 1280px){
         .logotd{
-            width: 2.5em;
-            position: relative;
-            left: -25em;
-        }
-        .nav-bar{
-            padding: 12px 9px;
-        }
-        .menu{
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 80%;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            right: -100%;
-            z-index: 100;
-            background-color: #2e2d2d;
-            transition: all 0.2s ease-in-out;
-        }
-        .menu li{
-            margin-top: 40px;
-        }
-        .menu li a{
-            padding: 10px;
-        }
-        .open-menu , .close-menu{
-            display: block;
-        }
-        #check:checked ~ .menu{right: 0;}
-        .icon-usuario{
-            width: 2em;
-            margin-left: 1em;
-            position: relative;
-            top: -27.95em;
-            left: -21em;
-        }
-        .icon-carrito{
-            width: 2em;
-            margin-left: 1em;
-            position: relative;
-            top: -30.4em;
-            left: -18em;
-        }
+                width: 2.5em;
+                position: relative;
+                left: -25em;
+            }
+            .nav-bar{
+                padding: 12px 9px;
+            }
+            .menu{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                z-index: 100;
+                background-color: #2e2d2d;
+                transition: all 0.2s ease-in-out;
+            }
+            .menu li{
+                margin-top: 40px;
+            }
+            .menu li a{
+                padding: 10px;
+            }
+            .open-menu , .close-menu{
+                display: block;
+            }
+            #check:checked ~ .menu{right: 0;}
+            .icon-usuario{
+                width: 2em;
+                margin-left: 1em;
+                position: relative;
+                top: -27.95em;
+                left: -21em;
+            }
+            .icon-carrito{
+                width: 2em;
+                margin-left: 1em;
+                position: relative;
+                top: -30.4em;
+                left: -18em;
+            }
         .container-descripcion{
                 display: block;
                 width: 45em;
@@ -866,4 +884,4 @@ body{
                 }
               }
         
-    }
+}
